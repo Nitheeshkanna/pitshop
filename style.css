@@ -1,0 +1,316 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.header
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(0, 0, 0, 1.0);
+}
+.header .logo
+{
+	margin-left: -30px;
+}
+
+.header form select
+{
+	height: 40px;
+	width: 200px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 0px;
+	color: white;
+	border-radius: 5px;
+}
+
+.header form input
+{
+	margin-left: -120px;
+	height: 40px;
+	width: 500px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 0px;
+	border-radius: 5px;
+}
+.header form i
+{
+	margin-left: -20px;
+	color: white;
+}
+
+.header .cart i
+{
+	color: white;
+	font-size: 30px;
+	margin-left: 10px;
+}
+nav
+{
+	padding: 20px;
+	font-size: 18px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: rgba(0, 0, 0, 1.0);
+}
+nav ul
+{
+	margin-left: -160px;
+}
+
+nav li
+{
+	display: inline-block;
+	margin: 0px 8px;
+}
+
+nav select
+{
+	color: white;
+	background: rgba(0, 0, 0, 1.0);
+	border: 0px;
+}
+
+nav .butt button
+{
+	height:35px;
+	width: 50px;
+	font-size: 25px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 0px;
+}
+nav .butt
+{
+	display: none;
+}
+
+.container
+{
+	height: 80vh;
+	width: 100%;
+	background: url('1.jpg') top/cover no-repeat;
+	position: relative;
+	transition: background 1.3s ease-in-out;
+}
+.container .contain
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.container .contain .hero
+{
+	padding-top: 100px;
+}
+.container .contain .hero h1
+{
+	font-size: 50px;
+	width: 53%;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+.container .contain .hero button
+{
+	margin-top: 30px;
+	height: 45px;
+	width: 110px;
+	border-radius: 10px;
+	border: none;
+	font-weight: bold;
+}
+.container .contain .access
+{
+	margin-top: 50px;
+	padding: 50px;
+	width: 30%;
+	height: 350px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.container .contain .access form h2
+{
+	font-size: 24px;
+}
+.container .contain .access form
+{
+	display: flex;
+	flex-direction: column;
+}
+.container .contain .access form select
+{
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	height: 50px;
+	border-radius: 10px;
+}
+.container .contain .access form #sel
+{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .contain .access form button
+{
+	margin-top: 20px;
+	height: 40px;
+	background-color: yellow;
+	border: none;
+	border-radius: 10px;
+}
+.but
+{
+	color: white;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 10px 15px;
+	border-radius: 50%;
+	transform: translateY(calc(-50%));
+}
+.but.but-left
+{
+	position: absolute;
+	top: 90%;
+	left: 500px;
+}
+.but.but-right
+{
+	position: absolute;
+	top: 90%;
+	right: 500px;
+}
+.page2 h1
+{
+	margin-top: 200px;
+}
+
+.images
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 50px;
+	column-gap: 60px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.images img
+{
+	height: 150px;
+}
+
+
+
+
+
+@media (max-width:991px)
+{
+	.header form
+	{
+		display: none;
+	}
+
+	nav
+	{
+		flex-direction: column;
+	}
+	nav li
+	{
+		display: block;
+		padding: 10px 0px;
+	}
+	nav ul
+	{
+		margin-left: 100px;
+		text-align: justify-all;
+		display: none;
+	}
+	.logo
+	{
+		align-self: flex-start;
+		margin: 10px 20px;
+	}
+	nav .butt
+	{
+		display: block;
+		position: absolute;
+		right: 55px;
+		top: 29px;
+	}
+	nav .butt i
+	{
+		color: white;
+		font-size: 30px;
+	}
+	.showmenu
+	{
+		display: block;
+	}
+
+	.container .contain .access
+	{
+		width: 400px;
+	}
+	.images
+	{
+		margin-left: 15px;
+		column-gap: 30px;
+	}
+}
+
+@media (max-width:661px)
+{
+	nav .butt
+	{
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 29px;
+	}
+	.but.but-left
+	{
+		position: absolute;
+		top: 90%;
+		left: 20px;
+	}
+	.but.but-right
+	{
+		position: absolute;
+		top: 90%;
+		right: 20px;
+	}
+	.container .contain
+	{
+		flex-direction: column;
+	}
+	.container .contain .hero h1
+	{
+		width: 300px;
+		font-size: 30px;
+	}
+	.container .contain .access
+	{
+		width: 400px;
+		margin-top: 500px;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	.container .contain .access form h2
+	{
+		color: white;
+	}
+	.page2 h1
+	{
+		margin-top: 400px;
+	}
+	.images
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 20px;
+		column-gap: 0px;
+		margin-top: 50px;
+		margin-left: 40px;
+	}
+}
